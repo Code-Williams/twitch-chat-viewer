@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'persianSupport';
+    src: url('../Fonts/BRoya.eot') format('eot'),
+    url('../Fonts/Vazir-Regular-UI.ttf') format('truetype'),
+}
+
+*{
+    font-family: 'Ubuntu';
+    color: white;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    background: #1a1a1a url("../Images/background.png") fixed;
+}
+
+li{
+    margin-bottom: 15px;
+    font-weight: 400;
+    float: left;
+    padding: 20px 25px;
+    min-width: 405px;
+    min-height: 100px;
+    margin-left: 15px;
+    border-radius: 15px;
+    /* background: url("../Images/backgroundIcons.png") no-repeat;
+    background-position: right; */
+}
+
+p{
+    margin-top: 10px;
+    max-width: 405px;
+}
+
+div{
+    max-width: 405px;
+}
+
+ul{
+    vertical-align: baseline;
+}
+
+.imgBadge{
+    border-radius: 2px;
+    float: left;
+    background-color: rgb(224,5,185);
+}
+
+#headerMain p{
+    max-width: none;
+    user-select: none;
+    margin: 0;
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 15px 0;
+    font-size: 28px;
+    background-color: #242424;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+    transition: text-shadow .2s ease-in-out;
+}
+
+#headerMain p:hover{
+    text-shadow: gray 3px 3px 5px;
+}
+
+#headerMain{
+    background-color: #1a1a1a;
+    box-shadow: 0 0 4px 3px black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#showMessageButton{
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #242424;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: gray;
+    font-family: 'Poppins';
+}
+
+#nameInput{
+    user-select: none;
+    background-color: transparent;
+    border: solid 1px #242424;
+    margin: 15px 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: gray;
+    font-family: 'Poppins';
+}
+
+#fixTop{
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    background-color: transparent;
+    display: block;
+}
+
+#autoScrollButton{
+    user-select: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #242424;
+    font-family: 'Poppins';
+    color: gray;
+    float: right;
+    cursor: pointer;
+    margin: 15px 12px;
+}
+
+@media (max-width: 420px){
+    #headerMain{
+        height: 200px;
+    }
+}
+
+@media (max-width : 300px){
+    #headerMain{
+        min-height: 230px;
+    }
+    #showMessageButton{
+        float: right;
+        min-width: 90px;
+        margin-right: 12px;
+    }
+}
+
+@media(max-width: 430px){
+    #autoScrollButton{
+        margin-top: 0;
+        float: left;
+        margin-left: 15px;
+    }
+}

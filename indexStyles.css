@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    font-family: 'Poppins';
+    color: white;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    outline: none;
+}
+
+body{
+    /* background-color: #1a1a1a; */
+    background: #1a1a1a url("./Images/background.png") fixed;
+}
+
+#headerMain p{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 28px;
+    background-color: #242424;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+    transition: text-shadow .2s;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#headerMain p:hover{
+    text-shadow: gray 3px 3px 5px;
+}
+
+#headerMain{
+    box-shadow: 0 0 4px 3px black;
+}
+
+#bodyIndex{
+    width: 100%;
+    height: 100%;
+}
+
+.chatShower{
+    background-color: #141414;
+    border-radius: 20px;
+    margin-left: 25px;
+    box-shadow: rgb(14, 14, 14) 0 0 4px 2px;
+    float: left;
+    transition: .2s;
+    min-width: 330px;
+    max-width: 20%;
+    max-height: 500px;
+    margin-bottom: 30px;
+}
+
+.chatShower:hover{
+    box-shadow: rgb(14, 14, 14) 0 0 4px 4px;
+}
+
+.chatShower img{
+    width: 330px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.chatShower h2{
+    margin-left: 10px;
+}
+
+.chatShower p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #9e9e9e;
+}
+
+.chatShower button{
+    background-color: transparent;
+    border: white 0.13rem solid;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.chatShower button:active{
+    background-color: white;
+    color: #141414;
+}
+
+#twitch button{
+    border: #a263ff 0.13rem solid;
+    color: #a263ff;
+}
+
+#twitch button:active{
+    background-color: #a263ff;
+    color: #141414;
+}
+
+#youtube button{
+    border: red 0.13rem solid;
+    color: red;
+}
+
+#youtube button:active{
+    background-color: red;
+    color: #141414;
+}
+
+@media (min-width: 1660px){
+    .chatShower{
+        width: 10%;
+    }
+}
+
+@media (max-width: 370px){
+    .chatShower{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 340px){
+    .chatShower{
+        margin-left: 10px;
+        min-width: 300px;
+    }
+    .chatShower img{
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 300px){
+    .chatShower{
+        margin-left: 5px;
+        min-width: 270px;
+    }
+    .chatShower img{
+        width: 270px;
+    }
+}

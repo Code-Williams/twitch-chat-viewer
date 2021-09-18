@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Chat Manager</title>
+    <link rel="stylesheet" href="./twitchStyles.css">
+    <script src="./twitchScripts.js" defer></script>
+    <script src="./tmi.min.js"></script>
+
+</head>
+<body contextmenu="return false">
+    <p id="fixTop"></p>
+    <header id="headerMain">
+
+        <p>Chat Manager</p>
+        <input type="text" placeholder="Channel Name" id="nameInput">
+        <button id="showMessageButton">Turn ON</button>
+        <button id="autoScrollButton">Auto scroll is ON</button>
+
+    </header>
+
+    
+
+    <ul id="messageShower">
+
+    </ul>
+
+</body>
+</html>
